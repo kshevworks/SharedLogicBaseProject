@@ -23,8 +23,7 @@
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU' And '$(TargetFramework)' == 'net472'">
         <OutputPath>..\..\TutorialGameUnity\Assets\Code\Libraries\</OutputPath>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>portable</DebugType>
+        <DebugSymbols>pdbonly</DebugSymbols>
         <Optimize>false</Optimize>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
