@@ -1,0 +1,16 @@
+/**/.*/
+/**/[Bb]in/
+/**/[Oo]bj/
+/**/[Tt]emp/
+/**/.idea/
+/**/*.user
+
+/*Unity/[Ll]ibrary/
+/*Unity/[Ll]ogs
+/*Unity/*.csproj
+/*Unity/*.sln
+
+*.log
+*.log.meta
+
+/*Unity/UserSettings/

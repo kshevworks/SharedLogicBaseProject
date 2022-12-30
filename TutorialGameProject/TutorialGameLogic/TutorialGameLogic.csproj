@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>false</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFrameworks>net472;net6.0</TargetFrameworks>
+        <LangVersion>9</LangVersion>
+        <RootNamespace>TutorialGameLogic</RootNamespace>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU' And '$(TargetFramework)' == 'net472'">
+        <OutputPath>..\..\TutorialGameUnity\Assets\Code\Libraries\</OutputPath>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Prefer32Bit>false</Prefer32Bit>
+        <LangVersion>latest</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU' And '$(TargetFramework)' == 'net472'">
+        <OutputPath>..\..\TutorialGameUnity\Assets\Code\Libraries\</OutputPath>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Prefer32Bit>false</Prefer32Bit>
+        <LangVersion>latest</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="TutorialGameModel" Condition="'$(TargetFramework)' == 'net6.0'">
+            <HintPath>..\..\TutorialGameModel\TutorialGameModel\bin\Release\net6.0\ref\TutorialGameModel.dll</HintPath>
+        </Reference>
+        <Reference Include="TutorialGameModel" Condition="'$(TargetFramework)' == 'net472'">
+            <HintPath>..\..\TutorialGameModel\TutorialGameModel\bin\Release\net472\TutorialGameModel.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+</Project>

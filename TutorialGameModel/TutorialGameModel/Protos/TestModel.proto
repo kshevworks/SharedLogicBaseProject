@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "TutorialGameModel";
+
+message TestModel {
+  int32 value = 1;
+}
